@@ -1,0 +1,54 @@
+
+
+
+.addUser{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px;
+    margin-top: 100px;
+    margin-left:50px;
+    margin-right: 50px;
+}
+
+.addUser input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .addUser input[type=Number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .addUser input[type=submit] {
+    width: 100%;
+    background-color: #4863A0;;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .addUser button{
+    width: 100%;
+    background-color: #4863A0;;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+

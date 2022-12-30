@@ -11,6 +11,10 @@ route.post("/adduser", async function(req,res){
     const {name,email,phone} = data;
 // if missing any field, then throw error
 if(!name || !email || !phone) return res.status(400).send({message:"missing the mandatory fileds"})
+// if email already exists
+const getuser = await userModel.find({email:email})
+
+if(getuser.length>0) return res.status(400).send({data:"email already exists, try a different email"})
 const newUser = await userModel.create(data);
 res.status(201).send({message:"user Added successfully", data: newUser})
 })

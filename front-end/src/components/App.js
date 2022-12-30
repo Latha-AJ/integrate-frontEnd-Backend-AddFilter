@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -91,7 +92,7 @@ if(isEror) {return <p style={{textAlign:"center"}}>There is an error</p>}
   margin:"auto",
   padding:"15px",
   maxWidth:"400px",
-  alignContent:"center"}} onSubmit={handleSearch}>
+  alignContent:"center"}} onSubmit={handleSearch}>  
   <input type="text" className="inputFiled" placeholder='Search name' onChange={(e)=>{
     setValue(e.target.value) }} value ={value} style={{marginRight:"5px"}}/>
 
@@ -99,6 +100,9 @@ if(isEror) {return <p style={{textAlign:"center"}}>There is an error</p>}
   <button className='reset' color='dark' onClick={handleReset} style={{marginRight:"5px"}}>Reset </button>  
 </form>
 <div style={{marginTop:"100px"}}>
+<Link to="/Adduser">
+  <button className='AdduserBTN'>Add user</button>
+</Link><br></br>
 <table>
   <thead>     
      <tr>
@@ -133,6 +137,7 @@ if(isEror) {return <p style={{textAlign:"center"}}>There is an error</p>}
      )}
      
   </table>
+  
 <br></br>
 <div>
  {renderPagination()} 
