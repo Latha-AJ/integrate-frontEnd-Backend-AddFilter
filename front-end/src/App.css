@@ -1,0 +1,55 @@
+.users{
+  margin-left: 80px; 
+}
+
+
+.users td, .users th {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 150px;
+}
+
+.users tr:nth-child(even){background-color: #f2f2f2;}
+
+.users tr:hover {background-color: #ddd;}
+
+.users th {  
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+.search{
+  background-color: #728FCE;
+  padding: 10px;
+  width: 80px;
+  border: none;
+  height:40px;
+  border-radius: 5px;  
+}
+
+.reset{  
+    background-color:#DAEE01;
+    padding: 10px;
+    width: 80px;
+    border: none;
+    height:40px;
+    border-radius: 5px;  
+  }
+
+
+.inputFiled{
+  padding: 10px;
+  width: 200px;
+}
+
+.pageClass button{
+  background-color: #50C878;
+  padding: 10px;
+  width: 80px;
+  border: none;
+  height:40px;
+  border-radius: 5px;  
+}
+
